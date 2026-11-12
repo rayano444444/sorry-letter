@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I’m sorry — and I love you</title>
+<meta name="description" content="A small letter, with all of me: I’m sorry, I’m really sorry, and I love you.">
+<meta property="og:title" content="I’m sorry — and I love you">
+<meta property="og:description" content="A small letter, with all of me.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0509">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400;1,500&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- atmosphere -->
+  <div class="aurora" aria-hidden="true">
+    <span class="b1"></span>
+    <span class="b2"></span>
+    <span class="b3"></span>
+  </div>
+  <canvas id="hearts" aria-hidden="true"></canvas>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+
+  <nav class="dots" aria-label="Sections">
+    <a href="#s1" class="active" aria-label="The apology" title="The apology"></a>
+    <a href="#s2" aria-label="The honest part" title="The honest part"></a>
+    <a href="#s3" aria-label="I love you" title="I love you"></a>
+    <a href="#s4" aria-label="Always" title="Always"></a>
+  </nav>
+
+  <main>
+    <!-- 01 · THE APOLOGY -->
+    <section id="s1" class="hero">
+      <div class="hero-inner">
+
+        <div class="hero-heart-wrap">
+          <button class="hero-heart" id="heroHeart" aria-label="Tap the heart">
+            <span class="halo" aria-hidden="true"></span>
+            <svg class="heart-svg" viewBox="0 0 200 180" aria-hidden="true">
+              <defs>
+                <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffe1e8"/>
+                  <stop offset=".45" stop-color="#ff8fab"/>
+                  <stop offset="1" stop-color="#ff3f6e"/>
+                </linearGradient>
+              </defs>
+              <path d="M100 168C100 168 12 112 12 58 12 26 36 8 62 8c20 0 33 12 38 24 5-12 18-24 38-24 26 0 50 18 50 50 0 54-88 110-88 110Z" fill="url(#heroGrad)"/>
+            </svg>
+          </button>
+        </div>
+
+        <p class="eyebrow">a letter, finally said out loud</p>
+
+        <h1 class="display">
+          <span class="line"><span class="line-inner" style="--i:0">I’m</span></span>
+          <span class="line"><span class="line-inner grad" style="--i:1">sorry.</span></span>
+        </h1>
+
+        <p class="sub">I’ve been holding these words all day.<br>Here they are, without armor.</p>
+
+        <a class="scroll-cue" href="#s2" aria-label="Continue reading">
+          <span>scroll</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- 02 · THE HONEST PART -->
+    <section id="s2" class="section">
+      <div class="panel">
+
+        <svg class="mend reveal" style="--d:.05s" viewBox="0 0 200 180" role="img" aria-label="Two halves of a heart coming back together">
+          <defs>
+            <linearGradient id="mendGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffd7e1"/>
+              <stop offset=".5" stop-color="#ff8ba8"/>
+              <stop offset="1" stop-color="#ff4d7a"/>
+            </linearGradient>
+            <clipPath id="clipL"><rect x="0" y="0" width="100" height="180"/></clipPath>
+            <clipPath id="clipR"><rect x="100" y="0" width="100" height="180"/></clipPath>
+          </defs>
+          <g class="half half-l" clip-path="url(#clipL)">
+            <path d="M100 168C100 168 12 112 12 58 12 26 36 8 62 8c20 0 33 12 38 24 5-12 18-24 38-24 26 0 50 18 50 50 0 54-88 110-88 110Z" fill="url(#mendGrad)"/>
+          </g>
+          <g class="half half-r" clip-path="url(#clipR)">
+            <path d="M100 168C100 168 12 112 12 58 12 26 36 8 62 8c20 0 33 12 38 24 5-12 18-24 38-24 26 0 50 18 50 50 0 54-88 110-88 110Z" fill="url(#mendGrad)"/>
+          </g>
+        </svg>
+
+        <p class="eyebrow reveal" style="--d:.16s">the honest part</p>
+        <h2 class="display-2 reveal" style="--d:.26s">I’m really,<br><em>really</em> sorry.</h2>
+
+        <p class="body reveal" style="--d:.38s">
+          Not the kind of sorry that asks you to hurry up and be okay.
+          The kind that stays — that sits with what I got wrong, and would
+          choose differently a thousand times over.
+        </p>
+        <p class="whisper reveal" style="--d:.5s">You deserved better from me. You still do.</p>
+      </div>
+    </section>
+
+    <!-- 03 · AND THIS NEVER CHANGED -->
+    <section id="s3" class="section">
+      <div class="panel">
+        <p class="eyebrow reveal" style="--d:.05s">and this never changed</p>
+        <h2 class="display-2 love reveal" style="--d:.16s">I love you<span class="dot">.</span></h2>
+
+        <p class="body reveal" style="--d:.3s">
+          In the quiet, in the loud, in every ordinary hour of the day.
+          Not as a way to fix this with words — but because it is the
+          truest thing I know.
+        </p>
+        <p class="whisper reveal" style="--d:.42s">I love you. I’m sorry. I love you again.</p>
+      </div>
+    </section>
+
+    <!-- 04 · ALWAYS -->
+    <section id="s4" class="section final">
+      <div class="panel">
+        <p class="eyebrow reveal" style="--d:.05s">if you’ll have me</p>
+        <h2 class="display-2 always grad reveal" style="--d:.16s">Always.</h2>
+        <p class="body reveal" style="--d:.3s">I’ll spend the rest of it showing you — not just saying it.</p>
+        <p class="signature reveal" style="--d:.42s">— yours, entirely</p>
+        <button class="btn reveal" style="--d:.54s" id="again" type="button">
+          <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true">
+            <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z" fill="currentColor"/>
+          </svg>
+          read it again
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <noscript>
+    <style>
+      .reveal{opacity:1 !important;transform:none !important;filter:none !important}
+      .line-inner{transform:none !important}
+      .hero .eyebrow,.hero .sub,.hero .scroll-cue,.hero-heart-wrap{opacity:1 !important}
+    </style>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
